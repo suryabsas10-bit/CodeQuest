@@ -1,0 +1,958 @@
+
+.register-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    background: radial-gradient(circle, #142d53, #080d1a);
+}
+
+.register-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    background: #111a2e;
+    border: 1px solid #00c8e8;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 200, 232, 0.12);
+}
+
+.register-box h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+.register-box p {
+    text-align: center;
+    color: #b6c3d4;
+    margin-bottom: 25px;
+}
+
+.register-box label {
+    display: block;
+    margin: 15px 0 8px;
+    color: white;
+}
+
+.register-box input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #263b59;
+    border-radius: 7px;
+    background: #080d1a;
+    color: white;
+    outline: none;
+}
+
+.register-box input:focus {
+    border-color: #00e5ff;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: #00d9f5;
+    color: #080d1a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background: #00f0ff;
+}
+
+.error-message {
+    padding: 12px;
+    background: #461b28;
+    color: #ffb4c0;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    padding: 12px;
+    background: #123b2b;
+    color: #8fffc0;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.register-box .login-text {
+    margin-top: 20px;
+}
+
+.login-text a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+/* STUDENT DASHBOARD */
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px;
+    color: white;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+    color: #00e5ff;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.dashboard-header h2 {
+    color: white;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.dashboard-card {
+    background: #172b49;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    color: #00e5ff;
+}
+
+.dashboard-card p {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.dashboard-menu a {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+}
+
+.dashboard-menu a:hover {
+    background: #00bcd4;
+    color: #06152b;
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        width: auto;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+}
+
+/* ============================= */
+/* STUDENT DASHBOARD DESIGN      */
+/* ============================= */
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    color: #00e5ff;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.dashboard-header h2 {
+    color: white;
+    font-size: 26px;
+}
+
+.dashboard-header p {
+    color: #c5d9ed;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.dashboard-card {
+    background: #172b49;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-card h3 {
+    color: #00e5ff;
+    font-size: 21px;
+}
+
+.dashboard-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.activities-title {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.dashboard-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.dashboard-menu a {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 15px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dashboard-menu a:hover {
+    background: #00e5ff;
+    color: #06152b;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-menu {
+        flex-direction: column;
+    }
+
+    .dashboard-menu a {
+        text-align: center;
+    }
+}
+
+/* CodeQuest Common Theme */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+h1, h2, h3 {
+    color: #38bdf8;
+}
+
+button, .btn, a.button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover, a.button:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+.card, .stat-card, .mission-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #0f172a;
+    color: white;
+    margin: 8px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e293b;
+}
+
+th, td {
+    padding: 13px;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+}
+
+th {
+    background: #164e63;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* MISSION HISTORY */
+
+.history-card {
+    background: #172b49;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+.history-card h3 {
+    color: #00e5ff;
+}
+
+.correct {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #f87171;
+    font-weight: bold;
+}
+
+/* ADMIN VIEW STUDENTS */
+
+.student-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #111a2e;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #00bcd4;
+}
+
+.student-table-container table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+.student-table-container th {
+    background: #164e63;
+    color: #00e5ff;
+    padding: 15px;
+}
+
+.student-table-container td {
+    padding: 13px;
+    border-bottom: 1px solid #263b59;
+    color: white;
+}
+
+.student-table-container tr:hover {
+    background: #172b49;
+}
+
+.details-btn {
+    display: inline-block;
+    padding: 9px 14px;
+    background: #00bcd4;
+    color: #080d1a;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ADMIN ANALYTICS */
+
+.analytics-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.analytics-container h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 35px;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.analytics-card {
+    background: #172b49;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+.analytics-card h3 {
+    color: #00e5ff;
+}
+
+.analytics-card p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .analytics-container {
+        width: 95%;
+    }
+}
+
+/* MISSION PERFORMANCE REPORT */
+
+.report-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.report-container h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 30px;
+}
+
+.report-card {
+    background: #172b49;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 22px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+.report-card h3 {
+    color: #00e5ff;
+}
+
+.report-card p {
+    color: #e2e8f0;
+    margin: 12px 0;
+}
+
+.report-progress {
+    width: 100%;
+    height: 12px;
+    background: #263b59;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.report-progress-fill {
+    height: 100%;
+    background: #00d9f5;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .report-container {
+        width: 95%;
+    }
+}
+
+/* ADMIN STUDENT SUBMISSIONS */
+
+.submissions-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.submissions-container h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 30px;
+}
+
+.submissions-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #111a2e;
+    padding: 20px;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+}
+
+.submissions-table-container table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+.submissions-table-container th {
+    background: #164e63;
+    color: #00e5ff;
+    padding: 15px;
+}
+
+.submissions-table-container td {
+    padding: 13px;
+    border-bottom: 1px solid #263b59;
+    color: white;
+}
+
+.submissions-table-container tr:hover {
+    background: #172b49;
+}
+
+@media (max-width: 600px) {
+    .submissions-container {
+        width: 95%;
+    }
+}
+
+/* ADMIN ADD MISSION */
+
+.mission-form-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #111a2e;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mission-form-container h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.mission-form-container label {
+    display: block;
+    color: #c5d9ed;
+    margin: 15px 0 7px;
+}
+
+.mission-form-container input,
+.mission-form-container select,
+.mission-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #263b59;
+    border-radius: 7px;
+    background: #080d1a;
+    color: white;
+}
+
+.mission-form-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    background: #00d9f5;
+    color: #080d1a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mission-form-container button:hover {
+    background: #00f0ff;
+}
+
+@media (max-width: 600px) {
+    .mission-form-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* ADMIN MANAGE MISSIONS */
+
+.manage-missions-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.manage-missions-container h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 30px;
+}
+
+.mission-card {
+    background: #172b49;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 22px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+.mission-card h3 {
+    color: #00e5ff;
+}
+
+.mission-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.edit-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #00bcd4;
+    color: #080d1a;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delete-btn {
+    padding: 10px 18px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #00e5ff;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+@media (max-width: 600px) {
+    .manage-missions-container {
+        width: 95%;
+    }
+}
+
+/* EDIT MISSION */
+
+.edit-mission-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #111a2e;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.edit-mission-container h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.edit-mission-container label {
+    display: block;
+    color: #c5d9ed;
+    margin: 15px 0 7px;
+}
+
+.edit-mission-container input,
+.edit-mission-container select,
+.edit-mission-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #263b59;
+    border-radius: 7px;
+    background: #080d1a;
+    color: white;
+}
+
+.edit-mission-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    background: #00d9f5;
+    color: #080d1a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-mission-container button:hover {
+    background: #00f0ff;
+}
+
+@media (max-width: 600px) {
+    .edit-mission-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* CHANGE PASSWORD */
+
+.password-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #111a2e;
+    border: 1px solid #00bcd4;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.password-container h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.password-container label {
+    display: block;
+    color: #c5d9ed;
+    margin: 15px 0 7px;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 13px;
+    background: #080d1a;
+    color: white;
+    border: 1px solid #263b59;
+    border-radius: 7px;
+}
+
+.password-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    background: #00d9f5;
+    color: #080d1a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.password-container button:hover {
+    background: #00f0ff;
+}
+
+@media (max-width: 600px) {
+    .password-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* STUDENT LOGIN */
+
+.login-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    background: radial-gradient(circle, #142d53, #080d1a);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    background: #111a2e;
+    border: 1px solid #00c8e8;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 200, 232, 0.12);
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.login-box label {
+    display: block;
+    color: white;
+    margin: 15px 0 8px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px;
+    background: #080d1a;
+    color: white;
+    border: 1px solid #263b59;
+    border-radius: 7px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #00d9f5;
+    color: #080d1a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #00f0ff;
+}
+
+@media (max-width: 600px) {
+    .login-box {
+        padding: 22px;
+    }
+}
+
+/* ADMIN LOGIN */
+
+.admin-login-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    background: radial-gradient(circle, #142d53, #080d1a);
+}
+
+.admin-login-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    background: #111a2e;
+    border: 1px solid #00c8e8;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 200, 232, 0.12);
+}
+
+.admin-login-box h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.admin-login-box label {
+    display: block;
+    color: white;
+    margin: 15px 0 8px;
+}
+
+.admin-login-box input {
+    width: 100%;
+    padding: 13px;
+    background: #080d1a;
+    color: white;
+    border: 1px solid #263b59;
+    border-radius: 7px;
+}
+
+.admin-login-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #00d9f5;
+    color: #080d1a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-login-box button:hover {
+    background: #00f0ff;
+}
+
+
+
+
+
+
